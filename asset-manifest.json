@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.0b01dacc.css",
-    "main.js": "/my-portfolio/static/js/main.1f7f5170.js",
+    "main.css": "/my-portfolio/static/css/main.4690e581.css",
+    "main.js": "/my-portfolio/static/js/main.d622e507.js",
     "static/media/mettaprotocol.jpeg": "/my-portfolio/static/media/mettaprotocol.265170ab32a7605a9578.jpeg",
     "static/media/aradchain.jpeg": "/my-portfolio/static/media/aradchain.0e7fc39c2da68b1b9987.jpeg",
     "static/media/jortty.jpeg": "/my-portfolio/static/media/jortty.04dafe8256db8d0e8e6c.jpeg",
@@ -9,11 +9,11 @@
     "static/media/ibrahim.jpeg": "/my-portfolio/static/media/ibrahim.00a6bab5f2cef9dbae94.jpeg",
     "static/media/terramater.jpeg": "/my-portfolio/static/media/terramater.50508134decb0aab15f9.jpeg",
     "index.html": "/my-portfolio/index.html",
-    "main.0b01dacc.css.map": "/my-portfolio/static/css/main.0b01dacc.css.map",
-    "main.1f7f5170.js.map": "/my-portfolio/static/js/main.1f7f5170.js.map"
+    "main.4690e581.css.map": "/my-portfolio/static/css/main.4690e581.css.map",
+    "main.d622e507.js.map": "/my-portfolio/static/js/main.d622e507.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b01dacc.css",
-    "static/js/main.1f7f5170.js"
+    "static/css/main.4690e581.css",
+    "static/js/main.d622e507.js"
   ]
 }

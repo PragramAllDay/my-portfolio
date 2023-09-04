@@ -101,22 +101,22 @@ const services = [
   {
     title: "Front-end Development",
     description:
-      "Create stunning user interfaces and engaging user experiences with cutting-edge front-end technologies like HTML5, CSS3, and JavaScript. We specialize in crafting pixel-perfect designs that captivate your audience and keep them coming back for more.",
+      "Create stunning user interfaces and engaging user experiences with cutting-edge front-end technologies like HTML5, CSS3, and JavaScript. I specialize in crafting pixel-perfect designs that captivate your audience and keep them coming back for more.",
   },
   {
     title: "Back-end Development",
     description:
-      "Build robust and scalable back-end systems that power your web applications. Our expertise in server-side technologies ensures seamless data handling, secure user authentication, and efficient database management to keep your application running smoothly.",
+      "Build robust and scalable back-end systems that power your web applications. My expertise in server-side technologies ensures seamless data handling, secure user authentication, and efficient database management to keep your application running smoothly.",
   },
   {
     title: "Figma to React",
     description:
-      "Transform your Figma designs into interactive React components. Our team of experienced developers can turn your static designs into dynamic, responsive web interfaces that perfectly match your vision, all while maintaining design fidelity.",
+      "Transform your Figma designs into interactive React components.I can turn your static designs into dynamic, responsive web interfaces that perfectly match your vision, all while maintaining design fidelity.",
   },
   {
     title: "Responsive Design",
     description:
-      " Ensure your website looks and functions flawlessly on all devices, from desktops to smartphones. Our responsive design approach guarantees that your content adapts seamlessly to different screen sizes, delivering an optimal user experience every time.",
+      "Ensure your website looks and functions flawlessly on all devices, from desktops to smartphones. My responsive design approach guarantees that your content adapts seamlessly to different screen sizes, delivering an optimal user experience every time.",
   },
 ];
 

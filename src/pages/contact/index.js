@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as emailjs from "emailjs-com";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -7,6 +7,48 @@ import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 
 export const ContactUs = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-left");
+        } else {
+          entry.target.classList.remove("show-left");
+        }
+      });
+    });
+    const hiddenElements = document.querySelectorAll(".hidden-left");
+    hiddenElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    const observerTwo = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-right");
+        } else {
+          entry.target.classList.remove("show-right");
+        }
+      });
+    });
+    const hiddenElementsTwo = document.querySelectorAll(".hidden-right");
+    hiddenElementsTwo.forEach((element) => {
+      observerTwo.observe(element);
+    });
+    const observerThree = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-down");
+        } else {
+          entry.target.classList.remove("show-down");
+        }
+      });
+    });
+    const hiddenElementsThree = document.querySelectorAll(".hidden-down");
+    hiddenElementsThree.forEach((element) => {
+      observerThree.observe(element);
+    });
+  }, []);
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -72,7 +114,7 @@ export const ContactUs = () => {
           <title>{meta.title} | Contact</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3">
+        <Row className="mb-5 mt-3 pt-md-3 hidden-left">
           <Col lg="8">
             <h1 className="display-4 mb-4">Contact Me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
@@ -92,7 +134,7 @@ export const ContactUs = () => {
               <p className="my-0">{formData.alertmessage}</p>
             </Alert>
           </Col>
-          <Col lg="5" className="mb-5">
+          <Col lg="5" className="mb-5 hidden-down">
             <h3 className="color_sec py-4">Get in touch</h3>
             <address>
               <strong>Email:</strong>{" "}
@@ -114,7 +156,7 @@ export const ContactUs = () => {
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
-                <Col lg="6" className="form-group">
+                <Col lg="6" className="form-group project hidden-down">
                   <input
                     className="form-control"
                     id="name"
@@ -126,7 +168,7 @@ export const ContactUs = () => {
                     onChange={handleChange}
                   />
                 </Col>
-                <Col lg="6" className="form-group">
+                <Col lg="6" className="form-group project hidden-down">
                   <input
                     className="form-control rounded-0"
                     id="email"
@@ -140,7 +182,7 @@ export const ContactUs = () => {
                 </Col>
               </Row>
               <textarea
-                className="form-control rounded-0"
+                className="form-control rounded-0 project hidden-down"
                 id="message"
                 name="message"
                 placeholder="Message"
@@ -151,7 +193,7 @@ export const ContactUs = () => {
               ></textarea>
               <br />
               <Row>
-                <Col lg="12" className="form-group">
+                <Col lg="12" className="form-group project hidden-down">
                   <button className="btn ac_btn" type="submit">
                     {formData.loading ? "Sending..." : "Send"}
                   </button>

@@ -133,12 +133,12 @@ const dataportfolio = [
       "A claiming DApp and a landing page. Effortless claiming of tokens for users.",
     link: "http://rwax-ico.surge.sh/",
   },
-  {
-    img: jortty,
-    description:
-      "Landing Page for an AI plateform. Responsive design with a clean and modern look.",
-    link: "http://jorrty-nextjs-static.s3-website-us-east-1.amazonaws.com/",
-  },
+  // {
+  //   img: jortty,
+  //   description:
+  //     "Landing Page for an AI plateform. Responsive design with a clean and modern look.",
+  //   link: "http://jorrty-nextjs-static.s3-website-us-east-1.amazonaws.com/",
+  // },
   {
     img: terramater,
     description:
